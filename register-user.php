@@ -78,13 +78,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="container">
     <img src="nacos-logo2.png" alt="" class="headline">
     <h2 class="txt tagline">Register For The Election</h2>
+
+    
     <form  class="punchline" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
       <label for="name">Name</label>
       <input type="text" name="username" id="" placeholder="Enter Your Name" required>
       <label for="matric">Matric Number</label>
       <input type="text" id="matricNumber" name="matric_number" placeholder="Enter Matriculation Number" required>
       <button type="submit" id="verify">Continue</button>
-      <div style="color: red;"><?php echo $error_message; ?></div>
+      <div class="error-message" style="background-color: #ffdddd; border-left: 6px solid #f44336;  margin-bottom: 15px; "><p><strong><?php echo $error_message; ?></strong> </p></div>
     </form>
   </div>
   <script src="JS/verify.js"></script>

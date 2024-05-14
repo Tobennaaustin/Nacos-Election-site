@@ -5,7 +5,7 @@ $error_message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $matric = $_POST['matric'];
-    $president = $_POST['president']; // Assuming you have other form fields
+    $president = $_POST['president']; 
     $vicePresident = $_POST['vicePresident'];
 
     // Connect to MySQL database

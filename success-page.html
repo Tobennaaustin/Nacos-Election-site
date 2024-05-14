@@ -3,60 +3,79 @@
   <head>
     <title>Success Page</title>
     <link rel="shortcut icon" href="nacos-logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
   </head>
     <style>
-      body {
-        text-align: center;
-        padding: 40px 0;
-        background: #EBF0F5;
-      }
-        h1 {
-          color: #88B04B;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-          font-weight: 900;
-          font-size: 40px;
-          margin-bottom: 10px;
-        }
-        p {
-          color: #404F5E;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-          font-size:20px;
-          margin: 0;
-          margin-bottom: 10px;
-        }
-      i {
-        color: #9ABC66;
-        font-size: 100px;
-        line-height: 200px;
-        margin-left:-15px;
-      }
-      .card {
-        background: white;
-        padding: 60px;
-        border-radius: 4px;
-        box-shadow: 0 2px 3px #C8D0D8;
-        display: inline-block;
-        margin: 0 auto;
-      }
-      a{
-        font-size: 25px;
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@500&family=Fjalla+One&family=Josefin+Sans:wght@300&family=Madimi+One&family=Moo+Lah+Lah&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Burned&family=Varela+Round&display=swap');
+
+      *{
+        padding: 0;
+        margin:0;
         text-decoration: none;
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #9ABC66;
-        color: white;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
       }
+
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: green;
+      }
+
+      .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        color:green;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .card .icon{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    .card .txt h3{
+      text-align: center;
+      padding: 5px;
+    }
+
+    .card .btn a{color: white; letter-spacing: 2px;}
+    .card .btn{
+      background-color: green;
+      padding: 7px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 25px;
+    }
     </style>
     <body>
       <div class="card">
-      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
-        <i class="checkmark">✓</i>
-      </div>
-        <h1>Success</h1> 
-        <p>Thanks for casting your vote<br/> </p>
-        <a href="index.html">Exit</a>
+        <div class="icon">
+          <p>&checkmark;</p>
+        </div>
+
+        <div class="txt">
+          <h3>Your Vote Has Been Submitted Successfully!!</h3>
+        </div>
+
+        <div class="btn">
+          <a href="index.html">Exit</a>
+        </div>
       </div>
     </body>
 </html>
